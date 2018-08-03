@@ -3,14 +3,17 @@
 		<title>JavaScript For Loop</title>
 	  <script>
 	  
-	  var i =prompt("enter your message here");
-     var count = 0;
-     words = i.charAt(" "); 
-      for (i=0 ; i < words.length ; i++){
-	             if (words[i] == "")
-          count += 1; }
-		  console.log(i);
-	  
+	  var input =prompt("enter your message here");
+     var count = input.length;
+    var words = 1; 
+	//i.charAt("count"); 
+      for (i=0 ; i<input.length ; i++){
+	             if (input.charAt(i)== " "){
+          words++;
+		  }
+		  
+		  }
+	  alert("total number of words are "+words);
 	  </script>
 	</head>
 <body>
